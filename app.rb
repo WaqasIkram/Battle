@@ -7,8 +7,6 @@ class Battle < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  
-
   get '/' do
     erb :index
   end
@@ -22,7 +20,7 @@ class Battle < Sinatra::Base
   get '/attack' do
     @Player_1 = $Player_1
     @Player_2 = $Player_2
-    @Player_1.attack(@Player_2)
+    Game.new.attack(@Player_2)
     erb :play
   end
 
