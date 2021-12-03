@@ -1,6 +1,40 @@
-<form action='/names' method='post'>
-  <input type='text'name='Player_1'>
-  vs.
-  <input type='text'name='Player_2'> 
-  <input type='submit' name='Submit'>
-</form>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background-image: url("https://t3.ftcdn.net/jpg/02/05/81/70/360_F_205817071_xWuxAlls5f1lmRAmN74YNn5gLrkFI5H5.jpg");
+      background-size: cover;
+      color: white;
+    }
+    #center {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 60%;
+      height: 60%;
+      text-align: center;
+    }
+    #button {
+      margin: 2%;
+      width: 25%;
+      background-color: #000000;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id='center'>
+    <h1>Battle</h1>
+    <p> Sign in and play </p>
+    <form action='/names' method='post'>
+      <input type='text'name='Player_1'>
+      vs.
+      <input type='text'name='Player_2'> 
+      <br>
+      <input type='submit' name='Submit' id='button'>
+    </form>
+  </div>
+</body>
