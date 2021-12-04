@@ -17,4 +17,17 @@ describe Game do
       expect(Game).to respond_to(:new).with(2).argument
     end
   end
+
+  describe '#current_turn' do
+    it 'start with player 1' do
+      expect(game.current_turn).to eq player1
+    end
+  end
+
+  describe '#swith_turn' do
+    it "changes player's turn" do
+      game.switch_turn
+      expect(game.current_turn).to eq player2
+    end
+  end
 end

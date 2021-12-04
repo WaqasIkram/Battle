@@ -9,7 +9,7 @@
       background-color: rgba(0, 0, 0, 0.5);
     }
     a {
-      color: white
+      color: #33ccff;
     }
     #center {
     position: absolute;
@@ -30,8 +30,8 @@
 <body>
   <div id='center'>
     <h1><%= @game.player_1.name %> vs. <%= @game.player_2.name %></h1>
+    <p><%= @game.player_1.name %>: <%= @game.player_1.hp %> HP</p>
     <p><%= @game.player_2.name %>: <%= @game.player_2.hp %> HP</p>
-    <br>
-    <a href='/attack'>Attack</a>
+    <%= @game.current_turn.name %>'s turn to <a href='/attack'>attack</a>
   </div>
 </body>

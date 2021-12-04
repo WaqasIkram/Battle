@@ -3,4 +3,9 @@ feature "Player 2 Hit points" do
     sign_in_and_play
     expect(page).to have_content('Tom: 100 HP')
     end
+
+  scenario 'able to see my own hit points' do
+    sign_in_and_play
+    expect(page).to have_content('David: 100 HP')
+  end
 end
