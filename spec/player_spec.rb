@@ -1,11 +1,11 @@
 require 'player'
 
 describe Player do
-  let(:player1) { Player.new('David') }
-  let(:player2) { Player.new('Tom') }
+  let(:player1) { Player.new('Superbon') }
+  let(:player2) { Player.new('Grigorian') }
   
   it 'returns the player name' do
-    expect(player1.name).to eq('David')
+    expect(player1.name).to eq('Superbon')
   end
 
   describe '#hp' do
@@ -16,7 +16,6 @@ describe Player do
 
   describe '#reduce_points' do
     it "reduces player's 2 HP" do
-      #   expect { player2.reduce_points }.to change { player2.hp }.by(-10)
     expect { player2.reduce_points }.to change { player2.hp }.from(100).to(90)
     end
   end

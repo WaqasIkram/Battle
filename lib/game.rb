@@ -20,4 +20,3 @@ class Game
   end
 end
 
-# need to remember to avoid using attr_reader and instead use methods
